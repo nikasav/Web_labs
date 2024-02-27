@@ -10,6 +10,113 @@
 
 .header {
   width: 100%;
+  height: 500px;
   background-image: url('../img/bg_header.png');
   background-size: cover;
+}
+
+.container {
+  max-width: 940px;
+  margin: 0 auto;
+}
+
+.header__top_container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 17px 0;
+} 
+
+.header__top_text {
+  font: 400 26px 'Lora', sans-serif;
+  text-decoration: none;
+  color:#ffffff;
+  padding: 3px 0 11px 0;
+}
+.header__top_menu {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+}
+.header__link {
+  color: #ffffff;
+  font: 400 12px 'Oxygen', sans-serif;
+  text-transform: uppercase;  
+  text-decoration: none;
+  padding: 10px;
+}
+
+.header__title_container {
+  padding: 110px 0 157px 0;
+  text-align: center;
+}
+
+.header__title {
+  font: 400 50px 'Lora', sans-serif;
+  color: #ffffff;    
+  padding-bottom: 20px;    
+}
+
+.header__title_descrition {
+  font: 400 17px 'Oxygen', sans-serif;
+  color:rgba(255, 255, 255, 0.63);   
+  padding-bottom: 31px;    
+}
+.header__title_button {
+  background:#DD783F;
+  font: 400 13px 'Oxygen', sans-serif;
+  color: #ffffff;
+  padding: 12px 31px;
+}
+
+.menu {
+  max-width: 960px;
+  margin: 0 auto;
+}
+.menu__list {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 9px 0 10px 0;
+}
+.menu__item {
+  color: #768088;
+  font: 400 14px 'Lora', sans-serif;
+  text-transform: none;  
+  text-decoration: none;
+  padding: 13px;
+  margin:10px;
+}
+
+.footer {
+  width: 100%;
+  background-image: url('../img/bg_floot.png');
+  background-size: cover;
+}
+
+.footer__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 28px 0 27px 0;
+}
+
+.footer__text {
+  font: 400 26px 'Lora', sans-serif;
+  text-decoration: none;
+  color: #FFFFFF;
+  padding: 3px 20px 11px 5px;
+}
+
+.footer__menu {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+}
+.footer__link {
+  font: 400 11px 'Oxygen', sans-serif;
+  color: rgba(255, 255, 255, 0.6);  
+  text-transform: uppercase;  
+  text-decoration: none;
+  padding: 10px;
 }
