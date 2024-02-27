@@ -1,0 +1,15 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.body {
+  max-width: 1440px;
+}
+
+.header {
+  width: 100%;
+  background-image: url('../img/bg_header.png');
+  background-size: cover;
+}
