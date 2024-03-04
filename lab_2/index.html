@@ -1,3 +1,5 @@
+<!DOCTYPE html>
+<html lang=”ru”>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,51 +9,163 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Oxygen:wght@300;400;700&display=swap"
         rel="stylesheet">
-    <title>Web_Lab1_2</title>
+    <title>Web_Lab2</title>
 </head>
 
 <body>
-        <header class="header">
-            <div class="header__top_container container">
-                <a class="header__top_text">Escape.</a>
-                <ul class="header__top_menu">
-                    <li><a class="header__link" href="#">Home</a></li>
-                    <li><a class="header__link" href="#">Category</a></li>
-                    <li><a class="header__link" href="#">About</a></li>
-                    <li><a class="header__link" href="#">Contact</a></li>
-                </ul>
-            </div>
-            <div class="header__title_container container">
-                <h1 class="header__title">Let's do it together.</h1>
-                <p class="header__title_descrition">We travel the world in search of stories. Come along for the ride.</p>
-                <button class="header__title_button" type="button">
-                    View Latest Posts
-                </button>
-            </div>
-
-        </header>
-        <menu class="menu">
-            <ul class="menu__list">
-                <li><a class="menu__item" href="#">Nature</a></li>
-                <li><a class="menu__item" href="#">Photography</a></li>
-                <li><a class="menu__item" href="#">Relaxation</a></li>
-                <li><a class="menu__item" href="#">Vacation</a></li>
-                <li><a class="menu__item" href="#">Travel</a></li>
-                <li><a class="menu__item" href="#">Adventure</a></li>
+    <header class="header">
+        <div class="header__top-container container">
+            <a class="header__top-logo">Escape.</a>
+            <ul class="header__top-menu menu">
+                <li><a class="header__link" href="#">Home</a></li>
+                <li><a class="header__link" href="#">Category</a></li>
+                <li><a class="header__link" href="#">About</a></li>
+                <li><a class="header__link" href="#">Contact</a></li>
             </ul>
-        </menu>
-        <main class="main">
+        </div>
+        <div class="header__title-container container">
+            <h1 class="header__title">Let's do it together.</h1>
+            <p class="header__title-descrition">We travel the world in search of stories. Come along for the ride.</p>
+            <a class="header__title-link" href="#"> View Latest Posts </a>
+        </div>
 
-        </main>
-        <footer class="footer">
-            <div class="footer__container container">
-                <a class="footer__text">Escape.</a>
-                <ul class="footer__menu">
-                    <li><a class="footer__link" href="#">Home</a></li>
-                    <li><a class="footer__link" href="#">Category</a></li>
-                    <li><a class="footer__link" href="#">About</a></li>
-                    <li><a class="footer__link" href="#">Contact</a></li>
-                </ul>
+    </header>
+    <menu class="menu">
+        <ul class="menu__list">
+            <li><a class="menu__item" href="#">Nature</a></li>
+            <li><a class="menu__item" href="#">Photography</a></li>
+            <li><a class="menu__item" href="#">Relaxation</a></li>
+            <li><a class="menu__item" href="#">Vacation</a></li>
+            <li><a class="menu__item" href="#">Travel</a></li>
+            <li><a class="menu__item" href="#">Adventure</a></li>
+        </ul>
+    </menu>
+    <main class="main">
+    <div class="main__post-subject container">
+        <h2 class="main__post-title">Featured Posts</h2>
+        <div class="main__container_articles">
+            <div class="main__container_article" style="background-image: url('./img/img1.jpg');  background-size: cover;">
+                <h2 class="main__article-title">The Road Ahead</h2>                            
+                <p class="main__article-disc">The road ahead might be paved - it might not be.</p>
+                <div class="main__article-autor">
+                    <div class="autor_info">
+                        <img class="autor_img" src="./img/Mat Vogels.png">
+                        <p class="autor_name font_autor">Mat Vogels</p>
+                    </div>
+                    <p class="autor_date font_autor">September 25, 2015</p>
+                </div>
             </div>
-        </footer>
+                        
+            <div class="main__container_article"  style="background-image: url('./img/img2.jpg');  background-size: cover;">
+                
+                <h2 class="main__article-title">From Top Down</h2>                           
+                <p class="main__article-disc">Once a year, go someplace you’ve never been before.</p>
+                <div class="main__article-autor">
+                    <div class="autor_info">
+                        <img class="autor_img" src="./img/William Wong.png">
+                        <p class="autor_name font_autor">William Wong</p>
+                    </div>
+                    <p class="autor_date font_autor">September 25, 2015</p>
+                </div>              
+            </div>
+        </div>
+    </div>
+
+    <div class="main__post-subject container">
+        <h2 class="main__post-title">Most Recent</h2>
+        <div class="main__container_last-articles">
+            <div class="main_container__last-article">
+                <img src="./img/balloons.jpg" alt="balloons" height="150px">
+                <h2 class="main__last-article-title">Still Standing Tall</h2>                            
+                <p class="main__last-article-disc">Life begins at the end of your comfort zone.</p>
+                <div class="main__article-last-autor">
+                    <div class="autor_info">
+                        <img class="autor_img" src="./img/William Wong.png">
+                        <p class="autor_name font_autor_black">William Wong</p>
+                    </div>
+                    <p class="autor_date font_autor_black">9/25/2015</p>
+                </div>                      
+            </div>
+                        
+            <div class="main_container__last-article">
+                <img src="./img/bridge.jpg" alt="bridge" height="150px">
+                <h2 class="main__last-article-title">Sunny Side Up</h2>                            
+                <p class="main__last-article-disc">No place is ever as bad as they tell you it’s going to be.</p>
+                 <div class="main__article-last-autor">
+                    <div class="autor_info">
+                        <img class="autor_img" src="./img/Mat Vogels.png">
+                        <p class="autor_name font_autor_black">Mat Vogels</p>
+                    </div>
+                    <p class="autor_date font_autor_black">September 25, 2015</p>
+                </div>              
+            </div>
+
+            <div class="main_container__last-article">
+                <img src="./img/lake.jpg" alt="lake" height="150px">
+                <h2 class="main__last-article-title">Water Falls</h2>                            
+                <p class="main__last-article-disc">We travel not to escape life, but for life not to escape us.</p>
+                <div class="main__article-last-autor">
+                    <div class="autor_info">
+                        <img class="autor_img" src="./img/William Wong.png">
+                        <p class="autor_name font_autor_black">William Wong</p>
+                    </div>
+                    <p class="autor_date font_autor_black">September 25, 2015</p>
+                </div>              
+            </div>
+
+            <div class="main_container__last-article">
+                <img src="./img/sea.jpg" alt="sea" height="150px">
+                <h2 class="main__last-article-title">Through the Mist</h2>                            
+                <p class="main__last-article-disc">Travel makes you see what a tiny place you occupy in the world.  </p>
+                <div class="main__article-last-autor">
+                    <div class="autor_info">
+                        <img class="autor_img" src="./img/William Wong.png">
+                        <p class="autor_name font_autor_black">William Wong</p>
+                    </div>
+                    <p class="autor_date font_autor_black">9/25/2015</p>
+                </div>              
+            </div>
+
+            <div class="main_container__last-article">
+                <img src="./img/fog.jpg" alt="fog"  height="150px">
+                <h2 class="main__last-article-title">Awaken Early</h2>                            
+                <p class="main__last-article-disc">Not all those who wander are lost.</p>
+                <div class="main__article-last-autor">
+                    <div class="autor_info">
+                        <img class="autor_img" src="./img/Mat Vogels.png">
+                        <p class="autor_name font_autor_black">Mat Vogels</p>
+                    </div>
+                    <p class="autor_date font_autor_black">9/25/2015</p>
+                </div>              
+            </div>
+
+            <div class="main_container__last-article">
+                <img src="./img/waterfall.jpg" alt="waterfall"  height="150px">
+                <h2 class="main__last-article-title">Try it Always</h2>                            
+                <p class="main__last-article-disc">The world is a book, and those who do not travel read only one page.</p>
+                <div class="main__article-last-autor">
+                    <div class="autor_info">
+                        <img class="autor_img" src="./img/William Wong.png">
+                        <p class="autor_name font_autor_black">William Wong</p>
+                    </div>
+                    <p class="autor_date font_autor_black">September 25, 2015</p>
+                </div>              
+            </div>
+
+        </div>
+    </div>
+
+    </main>
+    <footer class="footer">
+        <div class="footer__container container">
+            <a class="footer__text">Escape.</a>
+            <ul class="footer__menu">
+                <li><a class="footer__link" href="#">Home</a></li>
+                <li><a class="footer__link" href="#">Category</a></li>
+                <li><a class="footer__link" href="#">About</a></li>
+                <li><a class="footer__link" href="#">Contact</a></li>
+            </ul>
+        </div>
+    </footer>
 </body>
+</html>

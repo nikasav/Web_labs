@@ -68,6 +68,7 @@
   width: 100%;
   background-image: url('../img/bg_floot.jpg');
   background-size: cover;
+    background-position: center;
 }
 
 .main__title_container {
@@ -98,6 +99,6 @@
 }
 .main__text_content {
   font: 400 24px 'Oxygen', sans-serif;
-  color: rgb(16, 19, 21); 
+  color: #101315;
   margin-bottom: 30px;
 }
