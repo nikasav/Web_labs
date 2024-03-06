@@ -82,46 +82,45 @@
   padding-top: 6px;
 }
 /*информация про автора и дату статьи*/
-.main__article-autor {
+.main__article-author {
   padding: 12px 20px 15px 0;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 }
-.autor_info {
+.author_info {
   display: flex;
   justify-content: flex-start;
   flex-direction: row;
   flex-wrap: nowrap;
 }
-.autor_img {
+.author_img {
   width: 26px;
   padding: 5px 10px 4px 0;
 }
-.autor_name {
+.author_name {
   font: 400 12px/35px 'Oxygen', sans-serif;
   letter-spacing: 0em;
   text-align: left;
 }
-.autor_date {
+.author_date {
   font: 400 12px/35px 'Oxygen', sans-serif;
   letter-spacing: 0em;
   text-align: right;  
 }
-.autor_info {
+.author_info {
   display: flex;
   justify-content: start;
 }
 
 .font_white {
   color: rgba(255, 255, 255, 0.7);
-
 }
 .font_black {
   color: #999999;
 }
 
-.main__article-last-autor {
+.main__article-last-author {
   background-color: #FCFCFC;
   padding: 12px 20px 15px 0;
   display: flex;
@@ -143,14 +142,19 @@
   flex-wrap: wrap;
   text-align: center;
   padding-bottom: 89px;
+  gap: 24px;
 }
 .main__container_last-article {
   width: 296px;
-  padding: 6px 0 19px 0;
+  padding-top: 6px;
 }
 .main__last-article-img {
   width: 100%;
   height: 150px;
+}
+.main__container_last-title {
+  width: 100%;
+  height: 93px;  
 }
 .main__last-article-title {
   padding: 14px 0 0 13px;
@@ -161,7 +165,6 @@
   color: #101315;
 }
 .main__last-article-info {
-  height: 93px;
   width: 100%;
   border-bottom: 1px solid #EFEFEF; 
 }
@@ -176,9 +179,33 @@
   color: #7A7A7A;
   border-bottom: 1px solid #EFEFEF;
 }
-.main__last-article-autor {
+.main__last-article-author {
+  width: 100%;
+  height: 48px;
   display: flex;
   flex-wrap: wrap;
   list-style: none;
-  justify-content:center;
+  justify-content: space-between;
+}
+.last_author_info {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  justify-content: space-between;  
+}
+.last_author_img {
+  width: 26px;
+  padding: 12px 10px 10px 13px;
+}
+.last_author_name {
+  font: 400 12px/35px 'Oxygen', sans-serif;
+  letter-spacing: 0em;
+  text-align: left;
+  padding: 7px 0 6px 0;
+}
+.last_author_date {
+  font: 400 12px/35px 'Oxygen', sans-serif;
+  letter-spacing: 0em;
+  text-align: right;  
+  padding: 7px 13px 6px 0;
 }
