@@ -34,7 +34,7 @@
   text-decoration: underline;
   text-decoration-thickness: 1px;
   text-decoration-color: #DEDEDE;
-  padding: 60px 10px 16px 10px;   
+  padding: 60px 10px 32px 10px;   
   text-underline-offset: 16px;
   /* «Нулевая» позиция установлена по нижней границе блока */
   text-underline-position: under;
@@ -42,7 +42,6 @@
 
 /*main__post-articles*/
 .main__post-articles {
-  padding-top: 16px;
   display: flex;
   flex-direction: row;
   gap: 20px;
@@ -83,32 +82,37 @@
   padding-top: 6px;
 }
 /*информация про автора и дату статьи*/
-.main__article-avtor {
+.main__article-autor {
   padding: 12px 20px 15px 0;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 }
-.avtor_info {
+.autor_info {
   display: flex;
   justify-content: flex-start;
   flex-direction: row;
   flex-wrap: nowrap;
 }
-.avtor_img {
+.autor_img {
   width: 26px;
   padding: 5px 10px 4px 0;
 }
-.avtor_name {
+.autor_name {
   font: 400 12px/35px 'Oxygen', sans-serif;
   letter-spacing: 0em;
   text-align: left;
 }
-.avtor_date {
+.autor_date {
   font: 400 12px/35px 'Oxygen', sans-serif;
   letter-spacing: 0em;
   text-align: right;  
 }
+.autor_info {
+  display: flex;
+  justify-content: start;
+}
+
 .font_white {
   color: rgba(255, 255, 255, 0.7);
 
@@ -130,14 +134,6 @@
   width: 460px;
   position: absolute  ;
 }
-.autor_info {
-  display: flex;
-  justify-content: start;
-}
-.autor_date {
-  margin-left: auto;
-}
-
 
 .main__container_last-articles {
   width: 100%;
