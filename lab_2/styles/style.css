@@ -1,152 +1,71 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
 }
-
-.header {
-  width: 100%;
-  height: 500px;
-  background-image: url('../img/bg_header.png');
-  background-size: cover;
-  background-position: center;
-}
-
-.container {
-  max-width: 940px;
-  margin: 0 auto;
-}
-
-/*header__top*/
-.header__top-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 17px 0;
-} 
-.header__top-logo {
-  font: 400 26px 'Lora', sans-serif;
-  text-decoration: none;
-  color:#ffffff;
-  padding: 3px 0 11px 0;
-}
-.header__top-menu,
+.header-top__menu,
 .footer__menu {
   display: flex;
   flex-wrap: wrap;
   list-style: none;
 }
-.header__link {
-  color: #ffffff;
-  font: 400 12px 'Oxygen', sans-serif;
-  text-transform: uppercase;  
-  text-decoration: none;
-  padding: 10px;
+.container {
+  max-width: 940px;
+  margin: 0 auto;
 }
-
-/*.header__title*/
-.header__title-container {
-  padding: 110px 0 157px 0;
-  text-align: center;
-}
-.header__title {
-  font: 400 50px 'Lora', sans-serif;
-  color: #ffffff;      
-}
-.header__title-descrition {
-  font: 400 17px 'Oxygen', sans-serif;
-  color:rgba(255, 255, 255, 0.63);   
-  padding: 20px 0 31px 0;    
-}
-.header__title-link {
-  padding: 12px 31px;
-  background:#DD783F;
-  font: 400 13px 'Oxygen', sans-serif;
-  color: #ffffff;
-  border-radius: 3px;
-  text-decoration: none;
-}
-
-/*footer*/
-.footer {
-  width: 100%;
-  background-image: url('../img/bg_floot.png');
-  background-size: cover;
-  background-position: center;
-}
-.footer__container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 28px 0 27px 0;
-}
-.footer__text {
-  font: 400 26px 'Lora', sans-serif;
-  text-decoration: none;
-  color: #ffffff;
-  padding: 3px 0 5px 10px;
-}
-
-.footer__link {
-  font: 400 11px 'Oxygen', sans-serif;
-  color: rgba(255, 255, 255, 0.6);  
-  text-transform: uppercase;  
-  text-decoration: none;
-  padding: 3px 10px;
-}
-
-/*menu*/
-.menu {
-  max-width: 960px;
-  margin: 0 auto;  
-  padding: 9px 0 10px 0; 
-}
-.menu__list {
-  display: flex;
-  flex-wrap: wrap;
-  list-style: none;
-  justify-content: space-around;
-}
-.menu__item {
-  max-width: 139px;
-  color: #768088;
-  font: 400 14px 'Lora', sans-serif;
-  text-transform: none;  
-  text-decoration: none;
-  padding: 10px 0;
-}
-
+/*************************************************************
+*****************   Featured Posts  **************************
+**************************************************************/
 /*main container*/
 .main {
   width: 100%;
   background:#F7F7F7;
 }
 
+/*main__post-subject*/
 .main__post-subject {
   text-align: center;
-  padding-top: 60px;
 }
 .main__post-title {
-  font: 400 20px 'Oxygen', sans-serif;
+  font: 400 20px/27px 'Oxygen', sans-serif;
   color: #2e2e2e;
   letter-spacing: 2px;
   text-align: center; 
+
   text-decoration: underline;
   text-decoration-thickness: 1px;
   text-decoration-color: #DEDEDE;
-  letter-spacing: 2px; 
-  position: relative;
+  padding: 60px 10px 16px 10px;   
+  text-underline-offset: 16px;
+  /* «Нулевая» позиция установлена по нижней границе блока */
+  text-underline-position: under;
 }
 
-.main__container_articles {
+/*main__post-articles*/
+.main__post-articles {
   padding-top: 16px;
   display: flex;
   flex-direction: row;
   gap: 20px;
+  padding: 7px 10px;
 }
-.main__container_article {
+.main__article-content {
   width: 460px;
   padding-left: 20px;
+  position: relative;
+}
+.main__link_Adventure {
+  position: absolute;  
+  top: 26px;
+  left: 29px;
+  background: #DD783F;
+  font: 400 13px 'Oxygen', sans-serif;
+  color: #ffffff;
+  border-radius: 3px;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 0em;
+  text-align: left;
+  padding: 6px 9px 7px 9px;
 }
 .main__article-title {
   padding-top: 157px;
@@ -163,12 +82,39 @@
   color: rgba(255, 255, 255, 0.7);
   padding-top: 6px;
 }
-.main__article-autor {
+/*информация про автора и дату статьи*/
+.main__article-avtor {
   padding: 12px 20px 15px 0;
   display: flex;
   flex-wrap: wrap;
-  list-style: none;
-  justify-content: center;
+  justify-content: space-between;
+}
+.avtor_info {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+.avtor_img {
+  width: 26px;
+  padding: 5px 10px 4px 0;
+}
+.avtor_name {
+  font: 400 12px/35px 'Oxygen', sans-serif;
+  letter-spacing: 0em;
+  text-align: left;
+}
+.avtor_date {
+  font: 400 12px/35px 'Oxygen', sans-serif;
+  letter-spacing: 0em;
+  text-align: right;  
+}
+.font_white {
+  color: rgba(255, 255, 255, 0.7);
+
+}
+.font_black {
+  color: #999999;
 }
 
 .main__article-last-autor {
@@ -184,17 +130,6 @@
   width: 460px;
   position: absolute  ;
 }
-
-.font_autor {
-  color:rgba(255, 255, 255, 0.7);
-  font: 400 12px/35px 'Oxygen', sans-serif;
-  letter-spacing: 0em;
-}
-.font_autor_black {
-  color: #999999;
-  font: 400 12px/35px 'Oxygen', sans-serif;
-  letter-spacing: 0em;
-}
 .autor_info {
   display: flex;
   justify-content: start;
@@ -202,21 +137,24 @@
 .autor_date {
   margin-left: auto;
 }
-.autor_img {
-  width: 26px;
-  height: 26px;
-  padding: 5px 10px 4px 0;
-}
+
 
 .main__container_last-articles {
-  padding-top: 16px;
+  width: 100%;
+  gap: 24px; 
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  text-align: center;
+  padding-bottom: 89px;
 }
 .main__container_last-article {
   width: 296px;
-  padding: 12px 0;
+  padding: 6px 0 19px 0;
+}
+.main__last-article-img {
+  width: 100%;
+  height: 150px;
 }
 .main__last-article-title {
   padding: 14px 0 0 13px;
@@ -226,14 +164,21 @@
   text-align: left;
   color: #101315;
 }
+.main__last-article-info {
+  height: 93px;
+  width: 100%;
+  border-bottom: 1px solid #EFEFEF; 
+}
 .main__last-article-disc {
-  padding: 6px 0 0 13px;
+  width: 100%;
+  padding: 6px 0 33px 13px;
   font: 400 13px/19px 'Oxygen', sans-serif;
   font-family: Oxygen;
   line-height: 19px;
   letter-spacing: 0em;
   text-align: left;
   color: #7A7A7A;
+  border-bottom: 1px solid #EFEFEF;
 }
 .main__last-article-autor {
   display: flex;

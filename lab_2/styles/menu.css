@@ -1,0 +1,20 @@
+.menu {
+    max-width: 960px;
+    margin: 0 auto;  
+    padding: 9px 0 10px 0; 
+  }
+  .menu__list {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    justify-content: space-around;
+  }
+  .menu__item {
+    max-width: 139px;
+    color: #768088;
+    font: 400 14px/20px 'Lora', sans-serif;
+    letter-spacing: 0em;
+    text-align: center;    
+    text-transform: none;  
+    text-decoration: none;
+  }
