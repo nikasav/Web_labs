@@ -1,7 +1,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./style/lab1/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -28,7 +28,7 @@
             <h1 class="main__title">Let's do it together.</h1>
             <p class="main__title_descrition">The road ahead might be paved - it might not be.</p>
         </div>
-        <img class="main__image" src="./img/image.jpg" alt="Северное сияние">
+        <img class="main__image" src="./img/bg_img/image.jpg" alt="Северное сияние">
         <div class="main__content_bg">
             <div class="main__content container">
                 <p class="main__text_content">

@@ -1,0 +1,23 @@
+@import url('./menu.css');
+@import url('./header.css');
+@import url('./footer.css');
+@import url('./main.css');
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+.body {
+  max-width: 1440px;
+}
+ 
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.main {
+  width: 100%;
+  background:#F7F7F7;
+  padding-bottom: 89px;
+}
