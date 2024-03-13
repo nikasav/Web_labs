@@ -1,6 +1,5 @@
 .header {
   width: 100%;
-  height: 500px;
   background-image: url('../../img/bg_img/bg_header.png');
   background-size: cover;
   background-position: center;    
@@ -9,17 +8,17 @@
   display: flex;
   justify-content: space-between;
   padding: 17px 0;
+  flex-wrap: wrap;
 } 
 .header__logo {
   font: 400 26px/26px 'Lora', sans-serif;
   text-decoration: none;
   text-align: left;
-  letter-spacing: 0em;
   color:#ffffff;
   padding: 3px 0 11px 0;
 }
 .header__title-content {
-  padding: 110px 0 157px 0;
+  padding: 103px 0 157px 0;
   text-align: center;
 }
 .header__title {
@@ -31,7 +30,6 @@
 .header__subtitle {
   padding: 10px 3px 31px 3px;
   font: 400 17px/20px 'Oxygen', sans-serif;
-  letter-spacing: 0em;
   text-align: center; 
   color:rgba(255, 255, 255, 0.63);  
 }
@@ -42,11 +40,10 @@
   color: #ffffff;
   border-radius: 3px;
   text-decoration: none;
-  letter-spacing: 0em;
   text-align: center;
+  display: inline-block;
 } 
 .header__menu-link {
-  color: white;
   font: 400 12px/20px 'Oxygen', sans-serif;
   letter-spacing: 0.6px;
   text-align: left;
@@ -59,4 +56,5 @@
   justify-content: space-between;
   align-items: center;
   list-style: none;
+  flex-wrap: wrap;
 }    

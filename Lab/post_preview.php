@@ -9,7 +9,7 @@
                 <img class="author__img" src="<?= $post['image_author'] ?>">
                 <span class="author__name"><?= $post['author'] ?></span>
             </div>
-            <span class="post__date date"><?= $post['date'] ?></span>
+            <span class="post__date"><?= $post['date'] ?></span>
         </div>  
     </div>
 </div>

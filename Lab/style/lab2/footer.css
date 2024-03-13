@@ -1,14 +1,14 @@
 .footer {
-    width: 100%;
-    background-image: url('../../img/bg_img/bg_floot.jpg');
-    background-size: cover;
-    background-position: center;
-  }
+  width: 100%;
+  background-image: url('../../img/bg_img/bg_floot.jpg');
+  background-size: cover;
+  background-position: center;
+}
 .footer__content {
   display: flex;
   justify-content: space-between;
-  align-items: center;
   padding: 28px 0 27px 0;
+  flex-wrap: wrap;
 }
 .footer__logo {
  font: 400 26px/26px 'Lora', sans-serif;
@@ -21,6 +21,7 @@
   justify-content: space-between;
   align-items: center;
   list-style: none;
+  flex-wrap: wrap;
 }  
 .footer__link {
   font: 400 11px/26px 'Oxygen', sans-serif;
