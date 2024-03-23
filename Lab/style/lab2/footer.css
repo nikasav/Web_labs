@@ -3,7 +3,7 @@
   background-image: url('../../img/bg_img/bg_floot.jpg');
   background-size: cover;
   background-position: center;
-}
+  }
 .footer__content {
   display: flex;
   justify-content: space-between;
