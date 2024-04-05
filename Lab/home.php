@@ -5,24 +5,27 @@ $posts_featured = [
         'id' => 1,
         'title' => 'The Road Ahead',
         'subtitle' => 'The road ahead might be paved - it might not be.',
-        'is_adventure' => false,
-        'image' => '/static/img/post_img/img1.jpg',
+        'is_adventure' => 0,
+        'image_src' => '/static/img/post_img/img1.jpg',
         'image_alt' => 'img1',
         'author_image' => '/static/img/post_img/Mat_Vogels.png',
         'author_name' => 'Mat Vogels',
-        'date' => date("F j, Y", strtotime('9/25/2015')),
-
+        'public_date' => 1443139200,
+        'is_featured' => 1,
+        'content' => '',
     ],
     [
         'id' => 2,
         'title' => 'From Top Down',
         'subtitle' => 'Once a year, go someplace you’ve never been before.',
-        'is_adventure' => true,
-        'image' => '/static/img/post_img/img2.jpg',
+        'is_adventure' => 1,
+        'image_src' => '/static/img/post_img/img2.jpg',
         'image_alt' => 'img2',
         'author_image' => '/static/img/post_img/William_Wong.png',
         'author_name' => 'William Wong',
-        'date' => date("F j, Y", strtotime('9/25/2015')),
+        'public_date' => 1443139200,
+        'is_featured' => 1,
+        'content' => '',
     ],
 ];
 
@@ -31,67 +34,79 @@ $posts_recent = [
         'id' => 3,
         'title' => 'Still Standing Tall',
         'subtitle' => 'Life begins at the end of your comfort zone.',
-        'is_adventure' => false,        
-        'image' => '/static/img/post_img/balloons.jpg',
+        'is_adventure' => 0,
+        'image_src' => '/static/img/post_img/balloons.jpg',
         'image_alt' => 'balloons',
         'author_image' => '/static/img/post_img/William_Wong.png',
         'author_name' => 'William Wong',
-        'date' => date("d/m/Y", strtotime('9/25/2015')),
+        'public_date' => 1443139200,
+        'is_featured' => 0,
+        'content' => '',
     ],
     [
         'id' => 4,
         'title' => 'Sunny Side Up',
         'subtitle' => 'No place is ever as bad as they tell you it’s going to be.',
-        'is_adventure' => false,
-        'image' => '/static/img/post_img/bridge.jpg',
+        'is_adventure' => 0,
+        'image_src' => '/static/img/post_img/bridge.jpg',
         'image_alt' => 'bridge',
         'author_image' => '/static/img/post_img/Mat_Vogels.png',
         'author_name' => 'Mat Vogels',
-        'date' => date("d/m/Y", strtotime('9/25/2015')),
+        'public_date' => 1443139200,
+        'is_featured' => 0,
+        'content' => '',
     ],
     [
         'id' => 5,
         'title' => 'Water Falls',
         'subtitle' => 'We travel not to escape life, but for life not to escape us.',
-        'is_adventure' => false,
-        'image' => '/static/img/post_img/lake.jpg',
+        'is_adventure' => 0,
+        'image_src' => '/static/img/post_img/lake.jpg',
         'image_alt' => 'lake',
         'author_image' => '/static/img/post_img/Mat_Vogels.png',
         'author_name' => 'Mat Vogels',
-        'date' => date("d/m/Y", strtotime('9/25/2015')),
+        'public_date' => 1443139200,
+        'is_featured' => 0,
+        'content' => '',
     ],
     [
         'id' => 6,
         'title' => 'Through the Mist',
         'subtitle' => 'Travel makes you see what a tiny place you occupy in the world.',
-        'is_adventure' => false,
-        'image' => '/static/img/post_img/sea.jpg',
+        'is_adventure' => 0,
+        'image_src' => '/static/img/post_img/sea.jpg',
         'image_alt' => 'sea',
         'author_image' => '/static/img/post_img/William_Wong.png',
         'author_name' => 'William Wong',
-        'date' => date("d/m/Y", strtotime('9/25/2015')),
+        'public_date' => 1443139200,
+        'is_featured' => 0,
+        'content' => '',
     ],
     [
         'id' => 7,
         'title' => 'Awaken Early',
         'subtitle' => 'Not all those who wander are lost.',
-        'is_adventure' => false,
-        'image' => '/static/img/post_img/fog.jpg',
+        'is_adventure' => 0,
+        'image_src' => '/static/img/post_img/fog.jpg',
         'image_alt' => 'fog',
         'author_image' => '/static/img/post_img/Mat_Vogels.png',
         'author_name' => 'Mat Vogels',
-        'date' => date("d/m/Y", strtotime('9/25/2015')),
+        'public_date' => 1443139200,
+        'featured' => 0,
+        'content' => '',
     ],
     [
         'id' => 8,
         'title' => 'Try it Always',
         'subtitle' => 'Not all those who wander are lost.',
-        'is_adventure' => false,
-        'image' => '/static/img/post_img/waterfall.jpg',
+        'is_adventure' => 0,
+        'image_src' => '/static/img/post_img/waterfall.jpg',
         'image_alt' => 'waterfall',
         'author_image' => '/static/img/post_img/Mat_Vogels.png',
         'author_name' => 'Mat Vogels',
-        'date' => date("d/m/Y", strtotime('9/25/2015')),
+        'public_date' => 1443139200,
+        'is_featured' => 0,
+        'content' => '',
     ],
 ];
 ?>
@@ -106,7 +121,7 @@ $posts_recent = [
     <link
         href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Oxygen:wght@300;400;700&display=swap"
         rel="stylesheet">
-    <title>Lab_2</title>
+    <title>Lab</title>
 </head>
 
 <body>
@@ -120,6 +135,7 @@ $posts_recent = [
                 <li><a class="header__menu-link font_white" href="#">Contact</a></li>
             </ul>
         </div>
+
         <div class="header__title-content container">
             <h1 class="header__title">Let's do it together.</h1>
             <p class="header__subtitle">We travel the world in search of stories. Come along for the ride.</p>

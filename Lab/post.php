@@ -1,11 +1,12 @@
 <?php
 $postId = $_GET['id'];
 $post = [
-    'id' => $postId,
     'title' => 'The Road Ahead',
-    'image' => '/static/img/bg_img/image.jpg',
     'subtitle' => 'The road ahead might be paved - it might not be.',
-    'text' => [
+    'image_src' => '/static/img/bg_img/image.jpg',
+    'image_alt' => 'bg_image',
+
+    'content' => [
         'Dark spruce forest frowned on either side the frozen waterway. The trees had been stripped
     by a recent wind of their white covering of frost, and they seemed to lean towards each other,
     black and ominous, in the fading light. A vast silence reigned over the land. The land
@@ -16,7 +17,7 @@ $post = [
     incommunicable wisdom of eternity laughing at the futility of life and the effort of life.
     It was the Wild, the savage, frozen-hearted Northland Wild.',
 
-            'But there was life, abroad in the land and defiant. Down the frozen waterway toiled a string
+        'But there was life, abroad in the land and defiant. Down the frozen waterway toiled a string
     of wolfish dogs. Their bristly fur was rimed with frost. Their breath froze in the air as it
     left their mouths, spouting forth in spumes of vapour that settled upon the hair of their
     bodies and formed into crystals of frost. Leather harness was on the dogs, and leather traces
@@ -27,7 +28,7 @@ $post = [
     were other things on the sled—blankets, an axe, and a coffee-pot and frying-pan; but prominent,
     occupying most of the space, was the long and narrow oblong box.',
 
-            'In advance of the dogs, on wide snowshoes, toiled a man. At the rear of the sled toiled a
+        'In advance of the dogs, on wide snowshoes, toiled a man. At the rear of the sled toiled a
     second man. On the sled, in the box, lay a third man whose toil was over,—a man whom the Wild
     had conquered and beaten down until he would never move nor struggle again. It is not the way
     of the Wild to like movement. Life is an offence to it, for life is movement; and the Wild aims
@@ -37,7 +38,7 @@ $post = [
     of life, ever in revolt against the dictum that all movement must in the end come to the
     cessation of movement.',
 
-            'But at front and rear, unawed and indomitable, toiled the two men who were not yet dead.
+        'But at front and rear, unawed and indomitable, toiled the two men who were not yet dead.
     Their bodies were covered with fur and soft-tanned leather. Eyelashes and cheeks and lips were
     so coated with the crystals from their frozen breath that their faces were not discernible.
     This gave them the seeming of ghostly masques, undertakers in a spectral world at the funeral
@@ -45,6 +46,12 @@ $post = [
     and silence, puny adventurers bent on colossal adventure, pitting themselves against the might
     of a world as remote and alien and pulseless as the abysses of space.',
     ]
+];
+
+$header_footer = [
+    'href_logo' => '/home',
+    'title_logo' => 'Escape.',
+    'menu' => ['Home', 'Category', 'About', 'Contact'],
 ];
 ?>
 
@@ -57,35 +64,30 @@ $post = [
     <link
         href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Oxygen:wght@300;400;700&display=swap"
         rel="stylesheet">
-    <title>Web_Lab1_2</title>
+    <title>
+        <?= $post['title'] ?>
+    </title>
 </head>
 
 <body>
     <header class="header">
-        <div class="header__container container">
-            <a class="header__text link_black" href="/home">Escape.</a>
-            <ul class="header__menu">
-                <li><a class="header__link link_black" href="/home">Home</a></li>
-                <li><a class="header__link link_black" href="#">Category</a></li>
-                <li><a class="header__link link_black" href="#">About</a></li>
-                <li><a class="header__link link_black" href="#">Contact</a></li>
-            </ul>
-        </div>
+        <?php include 'header.php'; ?>
     </header>
 
     <main class="main">
         <div class="main__title_container container">
             <h1 class="main__title">
-                <?= $post['title'] ?> <?= $postId ?>
+                <?= $post['title'] ?>
+                <?= $postId ?>
             </h1>
             <p class="main__title_descrition">
                 <?= $post['subtitle'] ?>
             </p>
         </div>
-        <img class="main__image" src="<?= $post['image'] ?>" alt="Северное сияние">
+        <img class="main__image" src="<?= $post['image_src'] ?>" alt="<?= $post['image_alt'] ?>">
         <div class="main__content_bg">
             <div class="main__content container">
-                <?php foreach ($post['text'] as $text): ?>
+                <?php foreach ($post['content'] as $text): ?>
                     <p class="main__text_content">
                         <?= $text ?>
                     </p>
@@ -95,14 +97,6 @@ $post = [
     </main>
 
     <footer class="footer">
-        <div class="footer__container container">
-            <a class="footer__text" href="/home">Escape.</a>
-            <ul class="footer__menu">
-                <li><a class="footer__link link_white" href="/home">Home</a></li>
-                <li><a class="footer__link link_white" href="#">Category</a></li>
-                <li><a class="footer__link link_white" href="#">About</a></li>
-                <li><a class="footer__link link_white" href="#">Contact</a></li>
-            </ul>
-        </div>
+        <?php include 'footer.php'; ?>
     </footer>
 </body>

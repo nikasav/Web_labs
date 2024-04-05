@@ -9,18 +9,19 @@ if ($method === 'POST') {
 
 function saveFile(string $file, string $data): void
 {
-  $myFile = fopen($file, 'w');
-  if ($myFile) {
-    $result = fwrite($myFile, $data);
-    if ($result) {
-      echo 'Данные успешно сохранены в файл';
-    } else {
-      echo 'Произошла ошибка при сохранении данных в файл';
-    }
-    fclose($myFile);
-  } else {
+  $openFile = fopen($file, 'w');
+  if (!$openFile) {
     echo 'Произошла ошибка при открытии файла';
+    return;
   }
+  
+  $result = fwrite($openFile, $data);
+  if ($result) {
+    echo 'Данные успешно сохранены в файл';
+  } else {
+    echo 'Произошла ошибка при сохранении данных в файл';
+  }
+  fclose($openFile);
 }
 function saveImage(string $imageBase64)
 {
